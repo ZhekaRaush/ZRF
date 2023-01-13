@@ -8,18 +8,19 @@ const autoprefixer = require("autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 const postcss = require("gulp-postcss");
 
-const public = "./public";
+// const dist = "/Applications/MAMP/htdocs/test"; // Ссылка на вашу папку на локальном сервере
+const dist = "./dist";
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")
-                .pipe(gulp.dest(public))
+                .pipe(gulp.dest(dist))
                 .pipe(browsersync.stream());
 });
 
 gulp.task("build-sass", () => {
     return gulp.src("./src/sass/style.scss")
                 .pipe(sass().on('error', sass.logError))
-                .pipe(gulp.dest(public))
+                .pipe(gulp.dest(dist))
                 .pipe(browsersync.stream());
 });
 
@@ -51,13 +52,13 @@ gulp.task("build-js", () => {
                         ]
                       }
                 }))
-                .pipe(gulp.dest(public))
+                .pipe(gulp.dest(dist))
                 .on("end", browsersync.reload);
 });
 
 gulp.task("watch", () => {
     browsersync.init({
-		server: "./public/",
+		server: "./dist/",
 		port: 4000,
 		notify: true
     });
@@ -74,7 +75,7 @@ gulp.task("prod", () => {
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss([autoprefixer()]))
         .pipe(cleanCSS())
-        .pipe(gulp.dest(public));
+        .pipe(gulp.dest(dist));
 
     return gulp.src("./src/js/main.js")
                 .pipe(webpack({
@@ -100,7 +101,7 @@ gulp.task("prod", () => {
                         ]
                       }
                 }))
-                .pipe(gulp.dest(public));
+                .pipe(gulp.dest(dist));
 });
 
 gulp.task("default", gulp.parallel("watch", "build"));
