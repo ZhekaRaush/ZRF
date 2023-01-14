@@ -1,3 +1,4 @@
 import './lib/lib';
 
-console.log($('div'));
+$('div').show();
+// console.log($('div'));
