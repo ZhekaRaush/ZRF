@@ -1,1 +1,3 @@
-console.log('Тест!');
+import './lib/lib';
+
+console.log($('div'));
