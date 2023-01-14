@@ -2,5 +2,5 @@ import './lib/lib';
 
 // console.log($('div'));
 // $('.active').hide();
-
-$('.active').hide().show();
+// $('.active').hide().show();
+$('.active').toggle();
