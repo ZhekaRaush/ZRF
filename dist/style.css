@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box; }
 
+button {
+  width: 150px;
+  height: 30px;
+  background-color: lightgreen;
+  text-align: center; }
+
+.active {
+  font-size: 20px;
+  color: red; }
+
 .hide {
   display: none; }
 
