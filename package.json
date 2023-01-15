@@ -2,7 +2,7 @@
   "name": "zrf",
   "version": "1.0.0",
   "description": "Библиотека UI-ZRF. UI-ZRF - фреймворк написан с чистого листа, на чистом JavaScript, без использования сторонних библиотек",
-  "main": "gulpfile.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
