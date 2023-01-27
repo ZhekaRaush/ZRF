@@ -9,7 +9,6 @@ const clear = require('./task/clear.js');
 // Обработчик HTML
 const html = require('./task/html.js');
 // Обработчик PUG
-const pug = require('./task/pug.js');
 // Обработчик CSS
 const css = require('./task/css.js');
 // Обработчик SCSS
@@ -32,7 +31,6 @@ const server = () => {
 // Наблюдение
 const watcher = () => {
     watch(path.html.watch, html).on("all", browserSync.reload);
-    watch(path.pug.watch, pug).on("all", browserSync.reload);
     watch(path.css.watch, css).on("all", browserSync.reload);
     watch(path.scss.watch, scss).on("all", browserSync.reload);
     watch(path.js.watch, js).on("all", browserSync.reload);
@@ -41,7 +39,6 @@ const watcher = () => {
 
 // Задачи
 exports.html = html;
-exports.pug = pug;
 exports.css = css;
 exports.scss = scss;
 exports.js = js;
