@@ -1,7 +1,7 @@
 {
-  "name": "gulp-installer",
+  "name": "ZRF",
   "version": "1.0.1",
-  "description": "GULP-Installer - сборщик проекта на основе сборщика GULP4",
+  "description": "ZRF - Библиотека ZRF, ZRF-Library, Library-ZRF",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,19 +16,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZhekaRaush/Gulp-Installer.git"
+    "url": "git+https://github.com/ZhekaRaush/ZRF.git"
   },
   "keywords": [
-    "Сборщик проекта на основе GULP",
-    "Сборщик проекта на основе GULP4",
-    "GULP-Installer"
+    "Библиотека ZRF",
+    "ZRF-Library",
+    "ZRF",
+    "JS",
+    "SCSS",
+    "SASS",
+    "CSS",
+    "JavaScript"
   ],
   "author": "ZhekaRaush",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ZhekaRaush/Gulp-Installer/issues"
+    "url": "https://github.com/ZhekaRaush/ZRF/issues"
   },
-  "homepage": "https://github.com/ZhekaRaush/Gulp-Installer#readme",
+  "homepage": "https://github.com/ZhekaRaush/ZRF#readme",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
