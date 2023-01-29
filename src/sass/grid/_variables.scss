@@ -1,0 +1,17 @@
+// Переменная ширины контейнера
+$container-max-width: 1140px !default;
+// Количество колонок
+$grid-columns: 12 !default;
+// Расстояние между элементами
+$grid-width-height: 30px !default;
+$grid-width-height-size: $grid-width-height / 2;
+
+// Контрольные точки
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+ ) !default;

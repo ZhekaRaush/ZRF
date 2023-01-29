@@ -1,7 +1,28 @@
+@import 'grid/init';
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+
+    background-color: red;
+
+    @include bp(md) {
+        background-color: blue;
+    }
+
+    @include bp(lg) {
+        background-color: green;
+    }
 }
 
 button {
@@ -22,4 +43,18 @@ button {
 
 .show{
     display: block;
+}
+
+@import 'grid/init';
+
+.block {
+    padding: 20px;
+    background-color: #ddd;
+    border: solid 1px #aaa;
+    text-align: center;
+    height: 100%;
+}
+
+.row {
+    margin-bottom: 30px;
 }
