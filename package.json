@@ -1,7 +1,7 @@
 {
-  "name": "ZRF",
+  "name": "zrf",
   "version": "1.0.1",
-  "description": "ZRF - Библиотека ZRF, ZRF-Library, Library-ZRF",
+  "description": "ZRF - Библиотека ZRF, ZRF Library, Library ZRF",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
