@@ -1,51 +1,16 @@
-@import 'grid/init';
-
 *,
 ::before,
 ::after {
     box-sizing: border-box;
 }
 
-* {
+body {
     margin: 0;
     padding: 0;
-}
-
-body {
     font-size: 16px;
-
-    background-color: red;
-
-    @include bp(md) {
-        background-color: blue;
-    }
-
-    @include bp(lg) {
-        background-color: green;
-    }
 }
 
-button {
-    width: 150px;
-    height: 30px;
-    background-color: lightgreen;
-    text-align: center;
-}
-
-.active {
-    font-size: 20px;
-    color: red;
-}
-
-.hide{
-    display: none;
-}
-
-.show{
-    display: block;
-}
-
-@import 'grid/init';
+@import './bloc/js';
 
 .block {
     padding: 20px;
