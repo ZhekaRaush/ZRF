@@ -1,0 +1,33 @@
+// Контейнер
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    outline: solid 2px #ddd;
+}
+
+.block {
+    padding: 20px;
+    background-color: #ddd;
+    border: solid 1px #aaa;
+    text-align: center;
+    height: 100%;
+}
+
+// Ряд сетки
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 30px;
+}
+
+// Колонка сетки
+.col {
+    flex: 1 0 0%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
